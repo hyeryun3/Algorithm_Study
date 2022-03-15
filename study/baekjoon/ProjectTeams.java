@@ -24,10 +24,8 @@ public class ProjectTeams {
 		for (int i = 0; i < team; i++) {
 			teamw[i] = stdw[i]+stdw[stdno-1-i];
 		}
-		Arrays.sort(teamw);
-		
-		
-		System.out.println(teamw[0]);  
+		Arrays.sort(teamw);	// 정렬
+		System.out.println(teamw[0]); //최소값 출력 
 	}
 
 }
