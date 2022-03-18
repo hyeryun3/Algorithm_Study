@@ -1,11 +1,5 @@
 package study.level1;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Queue;
-
-import org.w3c.dom.Node;
-
 public class KakaoColoring {
 
 	public static void main(String[] args) {
@@ -26,7 +20,7 @@ public class KakaoColoring {
 
 	
 	public static int[] solution2(int m, int n, int[][] picture) {
-		System.out.println("아 어려워.....");
+		System.out.println("잔디..");
 		
 		return new int[2];
 	}
