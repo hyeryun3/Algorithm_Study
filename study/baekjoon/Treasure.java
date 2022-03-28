@@ -39,6 +39,7 @@ public class Treasure {
 		
 		int a[] = new int[n];
 		int b[] = new int[n];
+		
 		for (int i = 0; i < n; i++) {
 			a[i] = scan.nextInt();
 		}
@@ -54,7 +55,7 @@ public class Treasure {
 		for (int i = 0; i < n; i++) {
 			b2.add(b[i]);
 		}
-
+// a 배열 오름차순 sort -> 작은거를 b의 max값이랑 곱해서 aㄹ,ㄹ 포문으로 돌려서..?
 		int j2 = 0;
 		int tmp = 0;
 		for (int i = 0; i < n; i++) {
