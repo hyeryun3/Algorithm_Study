@@ -9,11 +9,11 @@ public class Pikachu {
 		String s = scanner.next();
 		String[] pikachu = {"pi","ka","chu"};
 		
-		for(int i=0; i<s.length();i++) {
-			s=s.replaceAll(pikachu[i], "");
+		for(int i=0; i<pikachu.length;i++) {
+			s=s.replaceAll(pikachu[i], " ");
 		}
 
-		if(s=="") {
+		if(s.trim().equals("")) {
 			System.out.println("YES");
 		}else {
 			System.out.println("NO");
