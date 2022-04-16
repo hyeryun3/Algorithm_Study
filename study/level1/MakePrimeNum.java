@@ -6,25 +6,29 @@ public class MakePrimeNum {
 		solution(nums);
 	}
 	public static int solution(int[] nums) {
-        int answer = -1;
-
+        int answer = 0;
+        int ans = 0;
+        
         int cnt = 0;
-        for(int i=0; i<3; i++) {
-        	for(int j=i+1; j<3; j++) {
-        		for(int k=i+2; k<3; k++) {
-        			answer= nums[i] + nums[j] + nums[k];
-        			
-        			for(int p = 2; p<answer; p++) {
-        				if(answer % p == 0) {
+        for(int i=0; i<nums.length; i++) {
+        	for(int j=i+1; j<nums.length; j++) {
+        		for(int k=j+1; k<nums.length; k++) {
+        			ans= nums[i] + nums[j] + nums[k];
+        			for(int p = 2; p<ans; p++) {
+        				if(ans % p == 0) {
         					cnt++;
+        					break;
         				}
         			}
+        			if(cnt==0) {
+        				answer++;
+        			}
+        			cnt=0;
         		}
         	}
         }
         
-        System.out.println(cnt);
-        return cnt;
+        return answer;
     }
 	
 }
