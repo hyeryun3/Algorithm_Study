@@ -26,7 +26,6 @@ public class BackTracking_NM2 {
 		backtracking(n,m,0);
 		
 		br.close();
-		
 		bw.flush();
 		bw.close();
 	}

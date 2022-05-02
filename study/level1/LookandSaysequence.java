@@ -19,9 +19,13 @@ public class LookandSaysequence {
 
 		for (int i = 1; i < num; i++) {
 			ans[i] = test(ans[i - 1]);
+			System.out.println(ans[i]);
 		}
-		System.out.println(ans[num - 1]);
-	}
+		
+		
+		String answer = "11231121311222311231211122321121132131112131122131112112221131132112321321123121133112312112221131112113213212312113311223123112312112223211211321113113211221312111223111213112213111211223311321113112221131132112231231132112312211213112213111211223123113211231211131211121311121123212223111213112213111";
+	}					 
+
 
 	public static String test(String str) {
 		String answer = "";
@@ -62,15 +66,10 @@ public class LookandSaysequence {
 					answer+=cnt;
 				}
 			}
+			answer+=cnt;
 
 		}
 
-		/*
-		 * if (str.length() == 1) { answer += cnt; } else { for (int i = 0; i <
-		 * str.length() - 1; i++) { if(anschar[i]==anschar[i+1]) { cnt++; answer+=cnt;
-		 * }else { answer += cnt + String.valueOf(anschar[i+1]); cnt=1; answer +=cnt; }
-		 * } }
-		 */
 		return answer;
 	}
 }

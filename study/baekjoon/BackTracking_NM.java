@@ -27,15 +27,15 @@ public class BackTracking_NM {
 			System.out.println();
 			return;
 		}
-		for(int i=0; i<n; i++) {
+		for(int i=1; i<n; i++) {
 			if(!check[i]) {
-				check[i] = true;
-				System.out.println("check["+i+"]="+check[i]);
+				check[i] = false;
+//				System.out.println("check["+i+"]="+check[i]);
 				arr[depth] = i+1;
-				System.out.println("arr["+depth+"]="+(i+1));
+//				System.out.println("arr["+depth+"]="+(i+1));
 				backtracking(depth+1);
 				check[i]=false;
-				System.out.println("check["+i+"]="+check[i]);
+//				System.out.println("check["+i+"]="+check[i]);
 			}
 		}
 	}
