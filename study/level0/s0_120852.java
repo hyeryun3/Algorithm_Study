@@ -10,7 +10,6 @@ public class s0_120852 {
     public static int[] solution(int n) {
         HashSet<Integer> set = new HashSet<>();
         int i = 2;
-        int cnt=0;
         while(n>=i){
             if(n%i==0){
                 set.add(i);
